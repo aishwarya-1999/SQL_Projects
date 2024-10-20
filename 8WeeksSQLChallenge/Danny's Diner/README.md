@@ -16,7 +16,8 @@ The 3 Key Datasets available are:
 3. members
 
 And the entity relationship Diagram is as shown below
-![image](https://github.com/user-attachments/assets/a4a979ed-161d-4315-9e29-8fb9b7fbdb90)
+![image](https://github.com/user-attachments/assets/50d9dc69-a1bb-43cb-ac26-5d33cf712437)
+
 
 ## Questions To Be Answered
 1. What is the total amount each customer spent at the restaurant?
