@@ -12,11 +12,12 @@ Danny's Diner has collected basic operational data over the past few months but 
 ## Data Tables
 The 3 Key Datasets available are:
 1. sales
-2. mwnu
+2. menu
 3. members
 
 And the entity relationship Diagram is as shown below
-[![ERD](https://github.com/user-attachments/assets/50d9dc69-a1bb-43cb-ac26-5d33cf712437)](https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/Danny's%20Diner/Schema.png)
+![ERD](https://github.com/user-attachments/assets/4c9501fd-b6c6-4c88-81b6-fd06f154e18b)
+
 
 
 ## Questions To Be Answered
