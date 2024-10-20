@@ -16,6 +16,7 @@ The 3 Key Datasets available are:
 3. members
 
 And the entity relationship Diagram is as shown below
+
 ![ERD](https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/Danny's%20Diner/Schema.png)
 
 
