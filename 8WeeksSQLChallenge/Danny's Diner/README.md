@@ -5,7 +5,6 @@ This is the first of  [Danny Ma's](https://8weeksqlchallenge.com/case-study-1/) 
 <p>
   <img src="https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af" width = 550 height=420>
 </p>
-![image](https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af)
 
 ## Problem Statement
 **Problem Statement:**
@@ -20,11 +19,11 @@ The 3 Key Datasets available are:
 
 And the entity relationship Diagram is as shown below
 
-![ERD](https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/Danny's%20Diner/Schema.png)
+<p>
+  <img src="https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/Danny's%20Diner/Schema.png" width = 550 height=420>
+</p>
 
-
-
-## Questions To Be Answered
+## Questions Answered
 1. What is the total amount each customer spent at the restaurant?
 2. How many days has each customer visited the restaurant?
 3. What was the first item from the menu purchased by each customer?
