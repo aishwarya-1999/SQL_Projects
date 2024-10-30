@@ -3,7 +3,7 @@
 This is the first of  [Danny Ma's](https://8weeksqlchallenge.com/case-study-1/) 8 Weeks SQL Challenge!
 
 <p>
-  <img src="https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af" width = 650 height=420>
+  <img src="https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af" width = 550 height=420>
 </p>
 ![image](https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af)
 
