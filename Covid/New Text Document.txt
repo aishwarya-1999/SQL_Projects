@@ -1,0 +1,3 @@
+importing data shows error Data truncated 1265
+> there were a lot of null values > filled as #NA
+> date was dd/mm/yyyy > converted to yyyy/mm/dd

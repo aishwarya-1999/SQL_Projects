@@ -1,0 +1,51 @@
+-- Data Exploration and Cleansing
+-- Update the fresh_segments.interest_metrics table by modifying the month_year column to be a date data type with the start of the month
+-- What is count of records in the fresh_segments.interest_metrics for each month_year value sorted in chronological order (earliest to latest) with the null values appearing first?
+-- What do you think we should do with these null values in the fresh_segments.interest_metrics
+-- How many interest_id values exist in the fresh_segments.interest_metrics table but not in the fresh_segments.interest_map table? What about the other way around?
+-- Summarise the id values in the fresh_segments.interest_map by its total record count in this table
+-- What sort of table join should we perform for our analysis and why? Check your logic by checking the rows where interest_id = 21246 in your joined output and include all columns from fresh_segments.interest_metrics and all columns from fresh_segments.interest_map except from the id column.
+-- Are there any records in your joined table where the month_year value is before the created_at value from the fresh_segments.interest_map table? Do you think these values are valid and why?
+-- Interest Analysis
+-- Which interests have been present in all month_year dates in our dataset?
+-- Using this same total_months measure - calculate the cumulative percentage of all records starting at 14 months - which total_months value passes the 90% cumulative percentage value?
+-- If we were to remove all interest_id values which are lower than the total_months value we found in the previous question - how many total data points would we be removing?
+-- Does this decision make sense to remove these data points from a business perspective? Use an example where there are all 14 months present to a removed interest example for your arguments - think about what it means to have less months present from a segment perspective.
+-- After removing these interests - how many unique interests are there for each month?
+-- Segment Analysis
+-- Using our filtered dataset by removing the interests with less than 6 months worth of data, which are the top 10 and bottom 10 interests which have the largest composition values in any month_year? Only use the maximum composition value for each interest but you must keep the corresponding month_year
+-- Which 5 interests had the lowest average ranking value?
+-- Which 5 interests had the largest standard deviation in their percentile_ranking value?
+-- For the 5 interests found in the previous question - what was minimum and maximum percentile_ranking values for each interest and its corresponding year_month value? Can you describe what is happening for these 5 interests?
+-- How would you describe our customers in this segment based off their composition and ranking values? What sort of products or services should we show to these customers and what should we avoid?
+-- Index Analysis
+-- The index_value is a measure which can be used to reverse calculate the average composition for Fresh Segments’ clients.
+
+-- Average composition can be calculated by dividing the composition column by the index_value column rounded to 2 decimal places.
+
+-- What is the top 10 interests by the average composition for each month?
+-- For all of these top 10 interests - which interest appears the most often?
+-- What is the average of the average composition for the top 10 interests for each month?
+-- What is the 3 month rolling average of the max average composition value from September 2018 to August 2019 and include the previous top ranking interests in the same output shown below.
+-- Provide a possible reason why the max average composition might change from month to month? Could it signal something is not quite right with the overall business model for Fresh Segments?
+-- Required output for question 4:
+
+-- month_year	interest_name	max_index_composition	3_month_moving_avg	1_month_ago	2_months_ago
+-- 2018-09-01	Work Comes First Travelers	8.26	7.61	Las Vegas Trip Planners: 7.21	Las Vegas Trip Planners: 7.36
+-- 2018-10-01	Work Comes First Travelers	9.14	8.20	Work Comes First Travelers: 8.26	Las Vegas Trip Planners: 7.21
+-- 2018-11-01	Work Comes First Travelers	8.28	8.56	Work Comes First Travelers: 9.14	Work Comes First Travelers: 8.26
+-- 2018-12-01	Work Comes First Travelers	8.31	8.58	Work Comes First Travelers: 8.28	Work Comes First Travelers: 9.14
+-- 2019-01-01	Work Comes First Travelers	7.66	8.08	Work Comes First Travelers: 8.31	Work Comes First Travelers: 8.28
+-- 2019-02-01	Work Comes First Travelers	7.66	7.88	Work Comes First Travelers: 7.66	Work Comes First Travelers: 8.31
+-- 2019-03-01	Alabama Trip Planners	6.54	7.29	Work Comes First Travelers: 7.66	Work Comes First Travelers: 7.66
+-- 2019-04-01	Solar Energy Researchers	6.28	6.83	Alabama Trip Planners: 6.54	Work Comes First Travelers: 7.66
+-- 2019-05-01	Readers of Honduran Content	4.41	5.74	Solar Energy Researchers: 6.28	Alabama Trip Planners: 6.54
+-- 2019-06-01	Las Vegas Trip Planners	2.77	4.49	Readers of Honduran Content: 4.41	Solar Energy Researchers: 6.28
+-- 2019-07-01	Las Vegas Trip Planners	2.82	3.33	Las Vegas Trip Planners: 2.77	Readers of Honduran Content: 4.41
+-- 2019-08-01	Cosmetics and Beauty Shoppers	2.73	2.77	Las Vegas Trip Planners: 2.82	Las Vegas Trip Planners: 2.77
+-- Conclusion
+-- You have probably come across this concept of customer segments or marketing segments in your everyday life, maybe without you even noticing it!
+
+-- Segments or audiences are super popular in the digital marketing space and using these interests or traits of customers is a mainstay of massive businesses like Google, Facebook, Instagram, LinkedIn and other social media where there are targeted advertising.
+
+-- Traditional businesses such as this client for Fresh Segments usually upload their customer emails or matched cookies into various digital marketing systems in order to generate some sort of match, usually using some machine learning methods, to other similar customers with the same interests.
