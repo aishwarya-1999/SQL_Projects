@@ -11,23 +11,45 @@ FROM
 
 -- How many unique customer orders were made?
 
-
+SELECT 
+    COUNT(DISTINCT (order_id)) AS uniqe_order
+FROM
+    customer_orders;
 
 -- How many successful orders were delivered by each runner?
 
-
+SELECT 
+    runner_id, COUNT(order_id) AS num_orders
+FROM
+    runner_orders
+GROUP BY runner_id;
 
 -- How many of each type of pizza was delivered?
 
-
+SELECT 
+    pizza_id, COUNT(order_id) AS num_orders
+FROM
+    customer_orders
+GROUP BY pizza_id;
 
 -- How many Vegetarian and Meatlovers were ordered by each customer?
 
-
+SELECT 
+	c.customer_id, p.pizza_name, count(c.order_id) as num_orders
+FROM
+	pizza_names p
+JOIN customer_orders c on p.pizza_id = c.pizza_id
+GROUP BY c.customer_id, p.pizza_name    
+ORDER BY c.customer_id;
 
 -- What was the maximum number of pizzas delivered in a single order?
 
-
+SELECT order_id, pizza_count
+FROM (SELECT order_id, count(pizza_id) as pizza_count,
+	DENSE_RANK() OVER(ORDER BY count(pizza_id) DESC) AS ranks
+FROM customer_orders
+GROUP BY order_id) as x
+WHERE ranks=1;
 
 -- For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 
