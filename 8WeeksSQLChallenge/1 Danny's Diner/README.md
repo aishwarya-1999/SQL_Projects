@@ -1,8 +1,12 @@
 # Case Study #1 - Danny's Diner
 
+# Case Study #1 - Danny's Diner
+
 This is the first of  [Danny Ma's](https://8weeksqlchallenge.com/case-study-1/) 8 Weeks SQL Challenge!
 
-![image](https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af)
+<p>
+  <img src="https://github.com/user-attachments/assets/1eb3b15a-7cb1-4d69-8951-143a570573af" width = 550 height=420>
+</p>
 
 ## Problem Statement
 **Problem Statement:**
@@ -12,14 +16,16 @@ Danny's Diner has collected basic operational data over the past few months but 
 ## Data Tables
 The 3 Key Datasets available are:
 1. sales
-2. mwnu
+2. menu
 3. members
 
 And the entity relationship Diagram is as shown below
-![ERD](https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/Danny's%20Diner/Schema.png)
 
+<p>
+  <img src="https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/1%20Danny's%20Diner/Schema.png" width = 550 height=420>
+</p>
 
-## Questions To Be Answered
+## Questions Answered
 1. What is the total amount each customer spent at the restaurant?
 2. How many days has each customer visited the restaurant?
 3. What was the first item from the menu purchased by each customer?
@@ -31,4 +37,4 @@ And the entity relationship Diagram is as shown below
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
-## Insights
+Find the answers [here](https://github.com/aishwarya-1999/SQL_Projects/blob/main/8WeeksSQLChallenge/1%20Danny's%20Diner/Analysis_Danny's_Diner.sql)
