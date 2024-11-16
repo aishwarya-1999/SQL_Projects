@@ -7,7 +7,6 @@ This is the first of  [Danny Ma's](https://8weeksqlchallenge.com/case-study-1/) 
 </p>
 
 ## Problem Statement
-**Problem Statement:**
 
 Danny's Diner has collected basic operational data over the past few months but lacks the expertise to analyze it for business insights. The goal is to use this data to understand customer behavior, specifically focusing on visiting patterns, total spending, and favorite menu items. These insights will enable the diner to build stronger connections with customers, offering more personalized experiences, especially for loyal patrons. Additionally, this analysis will assist in determining whether to expand the existing customer loyalty program. To facilitate this, the data needs to be transformed into easily accessible datasets for inspection by Danny's team, eliminating the need for SQL queries.
 
